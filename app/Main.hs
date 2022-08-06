@@ -106,14 +106,14 @@ runEvaluator filename =
 usage :: IO ()
 usage = do
   putStrLn "Usage:"
-  putStrLn "  la -T              Run tests."
-  putStrLn "  la -t foo.nu       Tokenize file."
-  putStrLn "  la -r foo.nu       Tokenize file (including dependencies)."
-  putStrLn "  la -p foo.nu       Parse file."
-  putStrLn "  la -k foo.nu       Infer kinds."
-  putStrLn "  la -i foo.nu       Infer types."
-  putStrLn "  la -d foo.nu       Desugar program."
-  putStrLn "  la foo.nu          Eval program."
+  putStrLn "  nuflo -T              Run tests."
+  putStrLn "  nuflo -t foo.nu       Tokenize file."
+  putStrLn "  nuflo -r foo.nu       Tokenize file (including dependencies)."
+  putStrLn "  nuflo -p foo.nu       Parse file."
+  putStrLn "  nuflo -k foo.nu       Infer kinds."
+  putStrLn "  nuflo -i foo.nu       Infer types."
+  putStrLn "  nuflo -d foo.nu       Desugar program."
+  putStrLn "  nuflo foo.nu          Eval program."
 
 die :: Error -> IO ()
 die e = do
